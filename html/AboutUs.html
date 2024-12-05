@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveTheSeas - About us</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="relative h-14 bg-blue-400 text-white font-semibold z-20">
+      <div class="flex justify-between items-center px-5 h-full">
+        <div class="flex items-center">
+          <a href="../index.html">
+            <img
+              src="../img/LogoSaveTheSeas.png"
+              class="h-10 w-12"
+              alt="Logo SaveTheSeas"
+            />
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-5">
+          <a class="hover:text-lg text-sts-dark-blue" href="./AboutUs.html"
+            >About Us</a
+          >
+          <a class="hover:text-lg" href="./WhatWeDo.html">What we do</a>
+          <a class="hover:text-lg" href="./Gallery.html">Gallery</a>
+          <a class="hover:text-lg" href="./Merch.html">Merch</a>
+          <a class="hover:text-lg" href="./JoinUs.html">Join Us</a>
+          <a class="hover:text-lg" href="./News.html">News</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="">
+            <img
+              class="w-10 h-10"
+              src="../img/profile-circle.png"
+              alt="Profile"
+            />
+          </a>
+          <a href="./login.html" class="hover:text-lg">Log Out</a>
+        </div>
+
+        <button
+          id="menuButton"
+          class="md:hidden flex items-center focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10"
+      >
+        <a class="hover:text-lg block text-sts-dark-blue" href="./AboutUs.html"
+          >About Us</a
+        >
+        <a class="hover:text-lg block" href="./WhatWeDo.html">What we do</a>
+        <a class="hover:text-lg block" href="./Gallery.html">Gallery</a>
+        <a class="hover:text-lg block" href="./Merch.html">Merch</a>
+        <a class="hover:text-lg block" href="./JoinUs.html">Join Us</a>
+        <a class="hover:text-lg block" href="./News.html">News</a>
+        <a class="hover:text-lg block" href="#">Profile</a>
+        <a href="./login.html" class="hover:text-lg block">Log Out</a>
+      </div>
+    </nav>
+    <h1 class="text-sts-dark-blue text-6xl text-center mt-12 font-bold">
+      About us
+    </h1>
+    <section class="bg-sts-light-blue py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2">
+            <img
+              src="../img/AboutUs.jpeg"
+              alt="Merch Gorra"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+            <h2 class="text-sts-dark-blue text-4xl font-bold mb-4">
+              Our story
+            </h2>
+            <p class="text-sts-dark-blue text-lg mb-4">
+              Save The Seas began because we saw the devastating impact
+              pollution was having on our oceans and marine life. As passionate
+              ocean lovers, we couldn’t stand by and watch our seas fill with
+              plastic and waste. We wanted to make a difference, not just for
+              the environment, but for future generations. It started with small
+              beach clean-ups and quickly grew into a global movement. Our goal
+              from the beginning has been to restore the beauty and health of
+              our oceans by taking direct action and inspiring others to do the
+              same.
+            </p>
+            <p class="text-sts-dark-blue text-lg">
+              Join us in our efforts to clean up beaches, reduce plastic
+              pollution, and promote marine conservation. Together, we can save
+              the seas for future generations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-sts-light-blue py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-sts-dark-blue text-4xl font-bold text-center mb-8">
+          Meet Our Team
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 1"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">
+              Julios Leon
+            </h3>
+            <p class="text-sts-dark-blue text-lg">CEO</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 2"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">Pol Romeu</h3>
+            <p class="text-sts-dark-blue text-lg">CEO</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 3"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">
+              Sergi Urbano
+            </h3>
+            <p class="text-sts-dark-blue text-lg">Secretary</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 4"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">
+              Marc Penas
+            </h3>
+            <p class="text-sts-dark-blue text-lg">CTO</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 5"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">Joel Orri</h3>
+            <p class="text-sts-dark-blue text-lg">Marketing</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="../img/profileIcon.png"
+              alt="Employee 6"
+              class="rounded-full w-32 h-32 mb-4 shadow-lg"
+            />
+            <h3 class="text-sts-dark-blue text-2xl font-semibold">
+              Adrian Sullca
+            </h3>
+            <p class="text-sts-dark-blue text-lg">Security</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveTheSeas - Join Us</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="h-14 content-center bg-blue-400 text-white font-semibold w-full"
+    >
+      <div class="flex justify-between items-center px-5 h-full">
+        <div class="flex items-center">
+          <a href="../index.html">
+            <img
+              src="../img/LogoSaveTheSeas.png"
+              class="h-10 w-12"
+              alt="Logo SaveTheSeas"
+            />
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-5">
+          <a class="hover:text-lg" href="./AboutUs.html">About Us</a>
+          <a class="hover:text-lg" href="./WhatWeDo.html">What we do</a>
+          <a class="hover:text-lg" href="./Gallery.html">Gallery</a>
+          <a class="hover:text-lg" href="./Merch.html">Merch</a>
+          <a class="hover:text-lg text-sts-dark-blue" href="./JoinUs.html"
+            >Join Us</a
+          >
+          <a class="hover:text-lg" href="./News.html">News</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="">
+            <img
+              class="w-10 h-10"
+              src="../img/profile-circle.png"
+              alt="Profile"
+            />
+          </a>
+          <a href="./login.html" class="hover:text-lg">Log Out</a>
+        </div>
+
+        <button
+          id="menuButton"
+          class="md:hidden flex items-center focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10"
+      >
+        <a class="hover:text-lg block" href="./AboutUs.html">About Us</a>
+        <a class="hover:text-lg block" href="./WhatWeDo.html">What we do</a>
+        <a class="hover:text-lg block" href="./Gallery.html">Gallery</a>
+        <a class="hover:text-lg block" href="./Merch.html">Merch</a>
+        <a class="hover:text-lg block text-sts-dark-blue" href="./JoinUs.html"
+          >Join Us</a
+        >
+        <a class="hover:text-lg block" href="./News.html">News</a>
+        <a class="hover:text-lg block" href="#">Profile</a>
+        <a href="./login.html" class="hover:text-lg block">Log Out</a>
+      </div>
+    </nav>
+    <div
+      class="bg-blue-50 shadow-lg max-w-screen-lg mx-auto mt-8 space-y-8 border border-blue-300 rounded-lg p-4"
+    >
+      <!-- Contact -->
+      <div class="border border-blue-300 rounded-lg p-4">
+        <h2 class="text-sts-dark-blue font-semibold mb-4">
+          Want more info about our purpose?
+        </h2>
+        <form class="space-y-3">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+          <textarea
+            placeholder="Message"
+            class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-sts-dark-blue text-textColor py-2 rounded-md hover:bg-blue-800"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+
+      <!-- Join Us -->
+      <div class="border border-blue-300 rounded-lg p-4">
+        <h2 class="text-sts-dark-blue font-semibold mb-4">Join Us</h2>
+        <form class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="space-y-3">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="text"
+              placeholder="Enter your age"
+              class="w-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+          <div>
+            <textarea
+              placeholder="Message telling why do you want to join us"
+              class="w-full h-full p-2 bg-blue-100 rounded-md text-sts-dark-blue placeholder-sts-dark-blue focus:outline-none focus:ring-2 focus:ring-blue-400"
+            ></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <button
+              type="submit"
+              class="w-full bg-sts-dark-blue text-textColor py-2 rounded-md hover:bg-blue-800"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

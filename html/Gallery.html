@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveTheSeas - Gallery</title>
+    <link href="/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+      /* Personalitzacio dels slides amb efecte */
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+        transition: opacity 0.3s ease, transform 0.5s ease;
+      }
+
+      .swiper-slide-active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .swiper-slide img {
+        border-radius: 10px;
+      }
+
+      /* Control de tamaño del slider */
+      .swiper {
+        width: 80%;
+        height: 400px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-blue-100 flex flex-col items-center justify-center">
+    <!-- Navbar -->
+    <nav
+      class="h-14 content-center bg-blue-400 text-white font-semibold w-full"
+    >
+      <div class="flex justify-between items-center px-5 h-full">
+        <div class="flex items-center">
+          <a href="../index.html">
+            <img
+              src="../img/LogoSaveTheSeas.png"
+              class="h-10 w-12"
+              alt="Logo SaveTheSeas"
+            />
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-5">
+          <a class="hover:text-lg" href="./AboutUs.html">About Us</a>
+          <a class="hover:text-lg" href="./WhatWeDo.html">What we do</a>
+          <a class="hover:text-lg text-sts-dark-blue" href="./Gallery.html"
+            >Gallery</a
+          >
+          <a class="hover:text-lg" href="./Merch.html">Merch</a>
+          <a class="hover:text-lg" href="./JoinUs.html">Join Us</a>
+          <a class="hover:text-lg" href="./News.html">News</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="">
+            <img
+              class="w-10 h-10"
+              src="../img/profile-circle.png"
+              alt="Profile"
+            />
+          </a>
+          <a href="./login.html" class="hover:text-lg">Log Out</a>
+        </div>
+
+        <button
+          id="menuButton"
+          class="md:hidden flex items-center focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10"
+      >
+        <a class="hover:text-lg block" href="./AboutUs.html">About Us</a>
+        <a class="hover:text-lg block" href="./WhatWeDo.html">What we do</a>
+        <a class="hover:text-lg block text-sts-dark-blue" href="./Gallery.html"
+          >Gallery</a
+        >
+        <a class="hover:text-lg block" href="./Merch.html">Merch</a>
+        <a class="hover:text-lg block" href="./JoinUs.html">Join Us</a>
+        <a class="hover:text-lg block" href="./News.html">News</a>
+        <a class="hover:text-lg block" href="#">Profile</a>
+        <a href="./login.html" class="hover:text-lg block">Log Out</a>
+      </div>
+    </nav>
+
+    <!-- Contendior principal Slider -->
+    <div class="swiper">
+      <!-- Agrupament extra -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            src="../img/trash_gallery.webp"
+            style="height: 250px; width: 400px"
+            alt="foto1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../img/trash_gallery2.avif"
+            style="height: 250px; width: 400px"
+            alt="foto2"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../img/trash_gallery3.jpg"
+            style="height: 250px; width: 400px"
+            alt="foto3"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../img/trash_gallery4.jpg"
+            style="height: 250px; width: 400px"
+            alt="foto4"
+          />
+        </div>
+
+        <!-- Es poden afegur mes slides aqui -->
+      </div>
+
+      <!-- Si necessitem paginació -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Si necessitem butons de navegació -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Si necessitem una scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <button
+        class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+      >
+        View all
+      </button>
+    </div>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Parametres opcionals
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        spaceBetween: -400,
+
+        // Personalitzar la posicio dels slides que no son central
+        slideToClickedSlide: true,
+        on: {
+          slideChangeTransitionEnd: function () {
+            const slides = document.querySelectorAll(".swiper-slide");
+            slides.forEach((slide) => {
+              if (!slide.classList.contains("swiper-slide-active")) {
+                slide.style.transition = "transform 0.5s ease";
+                slide.style.transform = "translateY(-50px)";
+              } else {
+                slide.style.transition = "transform 0.5s ease";
+                slide.style.transform = "translateY(0)";
+              }
+            });
+          },
+        },
+
+        // Coverflow perque sembli 3D
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: false,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      // Apply initial transformation to non-active slides
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".swiper-slide");
+        slides.forEach((slide) => {
+          if (!slide.classList.contains("swiper-slide-active")) {
+            slide.style.transform = "translateY(-50px)";
+          }
+        });
+      });
+
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

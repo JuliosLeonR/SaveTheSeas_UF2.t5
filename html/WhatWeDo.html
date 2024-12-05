@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveTheSeas - What we do</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="h-14 content-center bg-blue-400 text-white font-semibold">
+      <div class="flex justify-between items-center px-5 h-full">
+        <div class="flex items-center">
+          <a href="../index.html">
+            <img
+              src="../img/LogoSaveTheSeas.png"
+              class="h-10 w-12"
+              alt="Logo SaveTheSeas"
+            />
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-5">
+          <a class="hover:text-lg" href="./AboutUs.html">About Us</a>
+          <a class="hover:text-lg text-sts-dark-blue" href="./WhatWeDo.html"
+            >What we do</a
+          >
+          <a class="hover:text-lg" href="./Gallery.html">Gallery</a>
+          <a class="hover:text-lg" href="./Merch.html">Merch</a>
+          <a class="hover:text-lg" href="./JoinUs.html">Join Us</a>
+          <a class="hover:text-lg" href="./News.html">News</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="">
+            <img
+              class="w-10 h-10"
+              src="../img/profile-circle.png"
+              alt="Profile"
+            />
+          </a>
+          <a href="./login.html" class="hover:text-lg">Log Out</a>
+        </div>
+
+        <button
+          id="menuButton"
+          class="md:hidden flex items-center focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10"
+      >
+        <a class="hover:text-lg block" href="./AboutUs.html">About Us</a>
+        <a class="hover:text-lg block text-sts-dark-blue" href="./WhatWeDo.html"
+          >What we do</a
+        >
+        <a class="hover:text-lg block" href="./Gallery.html">Gallery</a>
+        <a class="hover:text-lg block" href="./Merch.html">Merch</a>
+        <a class="hover:text-lg block" href="./JoinUs.html">Join Us</a>
+        <a class="hover:text-lg block" href="./News.html">News</a>
+        <a class="hover:text-lg block" href="#">Profile</a>
+        <a href="./login.html" class="hover:text-lg block">Log Out</a>
+      </div>
+    </nav>
+    <h1 class="text-sts-dark-blue text-6xl text-center mt-12 font-bold">
+      What we do
+    </h1>
+    <section class="bg-sts-light-blue py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 md:order-2">
+            <img
+              src="../img/whatwedo.webp"
+              alt="Merch Gorra"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0 md:pr-12 md:order-1">
+            <h2 class="text-sts-dark-blue text-4xl font-bold mb-4">
+              At Save The Seas, we are dedicated to cleaning and protecting
+              seas, oceans, and beaches.
+            </h2>
+            <p class="text-sts-dark-blue text-lg mb-4">
+              Our team of volunteers works globally to remove plastic, waste,
+              and harmful debris from coastlines and marine environments. We
+              organize regular beach clean-ups, promote sustainable practices,
+              and collaborate with local communities to raise awareness about
+              ocean pollution. By actively reducing waste and restoring
+              ecosystems, we aim to protect marine life and preserve natural
+              habitats for future generations. Our mission is simple: a cleaner,
+              healthier planet, free from ocean pollution
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-sts-dark-blue text-4xl font-bold text-center mb-8">
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <img
+              src="../img/cleanup-icon.png"
+              alt="Beach Cleanup"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Beach Cleanup</h3>
+            <p class="text-lg">
+              Join our regular beach cleanups to remove plastic and waste from
+              coastlines.
+            </p>
+          </div>
+          <div class="text-center">
+            <img
+              src="../img/education-icon.png"
+              alt="Education Programs"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Education Programs</h3>
+            <p class="text-lg">
+              Participate in our educational programs to learn about ocean
+              conservation.
+            </p>
+          </div>
+          <div class="text-center">
+            <img
+              src="../img/research-icon.png"
+              alt="Marine Research"
+              class="mx-auto mb-4 w-16 h-16"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Marine Research</h3>
+            <p class="text-lg">
+              Support our research initiatives to study and protect marine
+              ecosystems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

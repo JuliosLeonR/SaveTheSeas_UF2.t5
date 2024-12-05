@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveTheSeas</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="h-14 content-center bg-blue-400 text-white font-semibold w-full"
+    >
+      <div class="flex justify-between items-center px-5 h-full">
+        <div class="flex items-center">
+          <a href="../index.html">
+            <img
+              src="../img/LogoSaveTheSeas.png"
+              class="h-10 w-12"
+              alt="Logo SaveTheSeas"
+            />
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-5">
+          <a class="hover:text-lg" href="./AboutUs.html">About Us</a>
+          <a class="hover:text-lg" href="./WhatWeDo.html">What we do</a>
+          <a class="hover:text-lg" href="./Gallery.html">Gallery</a>
+          <a class="hover:text-lg text-sts-dark-blue" href="./Merch.html"
+            >Merch</a
+          >
+          <a class="hover:text-lg" href="./JoinUs.html">Join Us</a>
+          <a class="hover:text-lg" href="./News.html">News</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="">
+            <img
+              class="w-10 h-10"
+              src="../img/profile-circle.png"
+              alt="Profile"
+            />
+          </a>
+          <a href="./login.html" class="hover:text-lg">Log Out</a>
+        </div>
+
+        <button
+          id="menuButton"
+          class="md:hidden flex items-center focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10"
+      >
+        <a class="hover:text-lg block" href="./AboutUs.html">About Us</a>
+        <a class="hover:text-lg block" href="./WhatWeDo.html">What we do</a>
+        <a class="hover:text-lg block" href="./Gallery.html">Gallery</a>
+        <a class="hover:text-lg block text-sts-dark-blue" href="./Merch.html"
+          >Merch</a
+        >
+        <a class="hover:text-lg block" href="./JoinUs.html">Join Us</a>
+        <a class="hover:text-lg block" href="./News.html">News</a>
+        <a class="hover:text-lg block" href="#">Profile</a>
+        <a href="./login.html" class="hover:text-lg block">Log Out</a>
+      </div>
+    </nav>
+    <main>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="content-center">
+          <img
+            class="h-auto w-2/3 mt-14 ml-10"
+            src="../img/Merch-Sudadera.png"
+            alt="SaveTheSeas Hoodie"
+          />
+        </div>
+        <div class="w-2/4 mr-36">
+          <h3 class="mb-10 text-3xl text-center text-sts-dark-blue font-bold">
+            SaveTheSeas Hoodie
+          </h3>
+          <p class="w-auto">
+            This cozy and stylish hoodie is crafted from high-quality,
+            breathable fabric, offering ultimate comfort and warmth. It’s
+            perfect for casual wear, outdoor activities, or lounging. Durable,
+            soft, and versatile, it's a must-have for any season!
+          </p>
+          <div class="flex flex-row mt-10 justify-evenly">
+            <button
+              class="bg-sts-dark-blue text-center text-sts-white w-28 h-8"
+            >
+              Buy Now
+            </button>
+            <p class="text-lg font-semibold text-sts-dark-blue">39,99€</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("menuButton")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>

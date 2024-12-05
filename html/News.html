@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaveTheSeas - News</title>
+  <link href="/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="h-14 content-center bg-blue-400 text-white font-semibold w-full">
+    <div class="flex justify-between items-center px-5 h-full">
+      <div class="flex items-center">
+        <a href="../index.html">
+          <img src="../img/LogoSaveTheSeas.png" class="h-10 w-12" alt="Logo SaveTheSeas" />
+        </a>
+      </div>
+
+      <div class="hidden md:flex space-x-5">
+        <a class="hover:text-lg" href="./AboutUs.html">About Us</a>
+        <a class="hover:text-lg" href="./WhatWeDo.html">What we do</a>
+        <a class="hover:text-lg" href="./Gallery.html">Gallery</a>
+        <a class="hover:text-lg" href="./Merch.html">Merch</a>
+        <a class="hover:text-lg" href="./JoinUs.html">Join Us</a>
+        <a class="hover:text-lg text-sts-dark-blue" href="./News.html">News</a>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-2">
+        <a href="">
+          <img class="w-10 h-10" src="../img/profile-circle.png" alt="Profile" />
+        </a>
+        <a href="./login.html" class="hover:text-lg">Log Out</a>
+      </div>
+
+      <button id="menuButton" class="md:hidden flex items-center focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu"
+      class="hidden absolute w-full top-14 flex-col text-center bg-blue-400 text-white px-5 py-3 space-y-2 md:hidden z-10">
+      <a class="hover:text-lg block" href="./AboutUs.html">About Us</a>
+      <a class="hover:text-lg block" href="./WhatWeDo.html">What we do</a>
+      <a class="hover:text-lg block" href="./Gallery.html">Gallery</a>
+      <a class="hover:text-lg block" href="./Merch.html">Merch</a>
+      <a class="hover:text-lg block" href="./JoinUs.html">Join Us</a>
+      <a class="hover:text-lg block text-sts-dark-blue" href="./News.html">News</a>
+      <a class="hover:text-lg block" href="#">Profile</a>
+      <a href="./login.html" class="hover:text-lg block">Log Out</a>
+    </div>
+  </nav>
+  <div class="bg-blue-50 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w mx-auto">
+    <!-- Main Article -->
+    <div class="col-span-1 md:col-span-2 lg:col-span-3 relative">
+      <img src="../img/ballena.webp" alt="Whale on the beach" class="w-full h-full object-cover rounded-lg shadow-lg" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white rounded-lg">
+        <h2 class="text-2xl font-bold">
+          Fifth whale found in a beach this month
+        </h2>
+        <p class="text-sm">We rescued it and now it's free</p>
+      </div>
+    </div>
+
+    <!-- Side Articles -->
+    <div class="col-span-1 md:col-span-1 lg:col-span-1 grid grid-rows-2 gap-4">
+      <div class="relative">
+        <img src="../img/pinguinos.jpeg" alt="Penguins on rubbish island"
+          class="w-full h-full object-cover rounded-lg shadow-lg" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 text-white rounded-lg">
+          <h3 class="text-lg font-semibold">
+            Penguins living in a rubbish island
+          </h3>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="../img/turtle_sofocating.jpg" alt="Turtle rescued from plastic"
+          class="w-full h-full object-cover rounded-lg shadow-lg" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 text-white rounded-lg">
+          <h3 class="text-lg font-semibold">
+            Turtle rescued while being trapped in plastic
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Articles -->
+    <div class="lg:col-span-2 relative">
+      <img src="../img/rubbish_beach.avif" alt="Beach full of rubbish"
+        class="w-full h-full object-cover rounded-lg shadow-lg" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 text-white rounded-lg">
+        <h3 class="text-lg font-semibold">Beach full of trash</h3>
+      </div>
+    </div>
+    <div class="md:col-span-2 lg:col-span-2 relative">
+      <img src="../img/foca-basura.jpg" alt="Seal in a polluted area"
+        class="w-full h-full object-cover rounded-lg shadow-lg" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 text-white rounded-lg">
+        <h3 class="text-lg font-semibold">Seal surrounded by rubbish</h3>
+      </div>
+    </div>
+  </div>
+  <script>
+    document
+      .getElementById("menuButton")
+      .addEventListener("click", function () {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("hidden");
+      });
+  </script>
+</body>
+
+</html>
